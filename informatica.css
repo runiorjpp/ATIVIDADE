@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.code-rain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+.code-line{
+    color: lime;
+    position: absolute;
+    bottom: 100%;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100vh);
+    }
+}
